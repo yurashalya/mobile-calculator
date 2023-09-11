@@ -1,8 +1,10 @@
 import { StyleSheet, Switch, Text, View } from "react-native";
 import { useState } from "react";
+import { SafeAreaView } from "react-native-safe-area-context";
 
-import { Button, ThemeContext } from "../components";
+import { Button, ThemeContext, KeyboardView } from "../components";
 import { colorsTheme, mainColors } from "../constants";
+import { StatusBar } from "expo-status-bar";
 
 function App() {
   const [theme, setTheme] = useState<string>(colorsTheme.LIGHT);
@@ -15,7 +17,7 @@ function App() {
 
   return (
     <ThemeContext.Provider value={theme}>
-      <View
+      <SafeAreaView
         style={
           theme === colorsTheme.LIGHT
             ? styles.container
@@ -23,14 +25,9 @@ function App() {
         }
       >
         <Switch value={theme === "light"} onChange={handleSwitchTheme} />
-        <Button
-          onPress={() => {
-            alert("Tes");
-          }}
-          title="3"
-          isBlue
-        />
-      </View>
+        <StatusBar style="auto" />
+        <KeyboardView />
+      </SafeAreaView>
     </ThemeContext.Provider>
   );
 }
@@ -39,7 +36,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     backgroundColor: mainColors.light,
   },
 });

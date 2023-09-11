@@ -1,4 +1,5 @@
 import Button from "./Button";
+import KeyboardView from "./Keyboard";
 import { ThemeContext } from "./themeContext";
 
-export { Button, ThemeContext };
+export { Button, ThemeContext, KeyboardView };
