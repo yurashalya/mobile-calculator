@@ -1,8 +1,7 @@
 # This is Mobile Calculator
 
-<img width="351" alt="Снимок экрана 2023-09-11 в 04 16 23" src="https://github.com/yurashalya/mobile-calculator/assets/25618300/70f14324-ed45-4869-9260-d760c27cb711">
-<img width="354" alt="Снимок экрана 2023-09-11 в 04 16 48" src="https://github.com/yurashalya/mobile-calculator/assets/25618300/1130276d-dd49-4259-86ba-27a487186fed">
-
+![simulator_screenshot_9462811A-C1D3-4DAE-93EA-C8639941D210](https://github.com/yurashalya/mobile-calculator/assets/25618300/67cd5b73-96ee-4815-9c92-e4fcaadac04a)
+![simulator_screenshot_4397A2B0-D057-4BED-AADB-6BEBC9E90B9C](https://github.com/yurashalya/mobile-calculator/assets/25618300/2aaa229a-193d-42b3-adfc-ab9f34b1155a)
 
 ### Features
 - Light/Dark mode
